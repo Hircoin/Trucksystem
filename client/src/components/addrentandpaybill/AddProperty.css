@@ -1,0 +1,149 @@
+/* Add or update existing styles */
+
+.circle-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .backend-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    z-index: 1;
+  }
+  
+  .motion-circles {
+    position: absolute;
+    top: calc(50% - 1cm);
+    left: calc(50% - 1cm);
+  }
+  
+  .motion-circles > div {
+    width: 2cm;
+    height: 2cm;
+    border-radius: 50%;
+    position: absolute;
+    animation: moveCircle 5s infinite;
+  }
+  
+  
+  
+  
+  .stock-market-background {
+    height: 100vh;
+    width: 100vw; /* Set width to cover the entire viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5efbd; /* Initial background color */
+    background-size: cover; /* Ensure the background covers the entire screen */
+    background-position: center; /* Center the background image */
+}
+  
+  .home-left4 {
+    background-color: #c6c3ee;
+    box-shadow: 0 2px 25px rgba(10, 26, 54, 0.9);
+    padding: 50px 80px 50px 80px;
+    margin: 20px 50px 20px 50px ;
+    width: 1000px;
+    border-radius: 50%;
+  }
+
+  .home-text115 {
+    color: rgb(35, 68, 41);
+    font-size: 25px;
+    font-style: Fancy;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .home-subscription {
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    
+    flex-direction: row;
+    padding-bottom: 8px;
+    justify-content: space-between;
+    background-color: #c8e5f5;
+  }
+
+  .home-textinput {
+    width: 100%;
+    outline: none;
+    font-size: 25px;
+    border-color: #c8e5f5;
+    border-radius: 30px;
+    background-color:#c8e5f5 ;
+  }
+
+  .home-subscribe {
+    cursor: pointer;
+    display: flex;
+    transition: 0.3s;
+    align-items: center;
+    padding-top: 16px;
+    padding-left: 32px;
+    border-radius: 56px;
+    margin-right: 12px;
+    margin-top: 10px;
+    padding-right: 32px;
+    flex-direction: row;
+    padding-bottom: 16px;
+    justify-content: flex-start;
+    background-color: #e3ec80;
+  }
+
+  .home-text116 {
+    color: #15173a;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 0px 30px 0px 45px;
+  }
+
+  .home-left4 {
+    width: 33%;
+    display: flex;
+    align-items: flex-start;
+    margin-right: 15px;
+    flex-direction: column;
+  }
+  
+  .circle {
+    border-radius: 50%;
+    position: absolute;
+    animation: floatAnimation 20s infinite alternate ease-in-out; /* Float animation */
+    box-shadow: 0 2px 8px rgba(10, 26, 54, 0.9); /* Add shadow effect */
+  }
+  
+  @keyframes floatAnimation {
+    0% {
+      transform: translate(-100%, 100%); /* Start position */
+    }
+
+    25% {
+      transform: translate(calc(2500% + 2000vw * calc(random() - 3)), calc(100% * calc(random() + 70)));
+    }
+
+    50% {
+      transform: translate(calc(-1500% + -2000vw * calc(random() - 0.5)), calc(-4100% * calc(random() - 20)));
+    }
+
+    75% {
+      transform: translate(calc(2000% + 1200vw * calc(random() + 4)), calc(1200% * calc(random() + 5)));
+    }
+
+    100% {
+      transform: translate(calc(-500% - 2000vw * calc(random() - 0.5)), calc(-1000% * calc(random() + 80))); /* End position */
+    }
+  }
